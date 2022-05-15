@@ -37,13 +37,13 @@ nav ul li{
 }
 nav ul li a{
     color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 20px;
     text-transform: uppercase;
 }
 a.active,a:hover{
-    background: #1b9bff;
+    background: crimson;
     transition: .5s;
 }
 .checkbtn{
@@ -92,7 +92,7 @@ nav ul li a{
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: #2c3e50;
+      background: black;
       top: 80px;
       left: -100%;
       text-align: center;
@@ -122,6 +122,7 @@ nav{
 }
 .contact1{
     background:black;
+    background-size: cover;
 }
 .contact{
     background: black;
@@ -232,6 +233,10 @@ nav{
 }
 .blog1{
     background: black;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
 }
 .container{
     padding: 5px;
@@ -264,6 +269,9 @@ section{
     background: #7f95d1;
 
 }
+h3{
+    font-size: 30px;
+}
 @media screen and (max-width: 980px) {
     section.columns {
         margin-bottom: 5px;
@@ -275,10 +283,7 @@ section{
         margin: 0;
 
     }
-    section.columns:last-child(2) {
-        margin-right: 0;
-
-    }
+    
 }
 @media screen and (max-width: 680px) {
     section.columns{
@@ -287,17 +292,70 @@ section{
 
     }
 }
+
 /* Portfolio */
 .portfolio1{
     background: black;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
 }
 nav{
     background: transparent;
     height: 80px;
     width: 100%;
 }
-section{
-    height: calc(100vh - 80px);
+.demo{
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+.port{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin:20px;
+    padding: 30px;
+
+}
+.column{
+    flex: 1;
+    border: 1px solid #666;
+    margin: 2px;
+    padding: 10px;
+    background: #3af4d5;
+    transition: 0.3s;
+}
+.column:first-child {
+    margin-left: 0;
+    background: #ff307f;
+
+}
+.column:last-child {
+    margin-left: 0;
+    background: #7f95d1;
+
+}
+@media screen and (max-width: 980px) {
+    .port.column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+
+    }
+    .port.column:last-child {
+        flex-basis: 100%;
+        margin: 0;
+
+    }
+}
+@media screen and (max-width: 680px) {
+    .port.column{
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+
+    }
 }
 /* Site report */
 nav{
@@ -309,9 +367,30 @@ nav{
     justify-content: space-between;
 }
 .site1{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../img/image.jpg);
-    background-position: center;
+    background:black;
     background-size:cover;
+}
+header{
+    float: right;
+    margin: 50px;
+    font-size: 20px;
+    color: white;
+}
+.report{
+    margin: 100px;
+    padding: 50px;
+}
+h2{
+    color:white;
+    margin: 20px 0px 20px;
+    font-size:50px ;
+}
+p{
+    color: white;
+    margin: 20px 0px 20px;
+    
+    letter-spacing: 2px;
+}
+.img{
+    width: 250px;
 }
